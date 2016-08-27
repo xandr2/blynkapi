@@ -2,4 +2,5 @@
 *.tox
 *.egg-info
 .DS_*
+blynkapi/.DS_*
 dist/*

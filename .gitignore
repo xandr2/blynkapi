@@ -1,0 +1,5 @@
+*.pyc
+*.tox
+*.egg-info
+DS_*
+dist/*

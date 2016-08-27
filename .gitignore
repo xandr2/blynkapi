@@ -1,6 +1,5 @@
 *.pyc
 *.tox
 *.egg-info
-.DS_*
-blynkapi/.DS_*
+*.DS_Store
 dist/*

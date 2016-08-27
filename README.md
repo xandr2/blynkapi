@@ -1,4 +1,4 @@
-# python-blynk-api
+# blynkapi
 
 This is a simple blynk API wrapper.
 
@@ -79,7 +79,7 @@ To set your value for pin
 ```python
 set_val(value)
 ```
-  - `value` - Value in format ["x"] or multiple ["x", "y"]. [Detail] (http://docs.blynkapi.apiary.io/#reference/0/pin-actions/write-pin-value)
+  - `value` - Value in format ["x"] or multiple ["x", "y"]. [Details] (http://docs.blynkapi.apiary.io/#reference/0/pin-actions/write-pin-value)
 
 To get data from pin
 ```python
@@ -120,7 +120,7 @@ Get QR image
 qr()
 ```
 
-Get project info
+Get project info For details see [docs] (http://docs.blynkapi.apiary.io/#reference/0/get-project/get-project)
 ```python
 get_project()
 ```

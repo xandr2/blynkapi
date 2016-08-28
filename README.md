@@ -39,11 +39,15 @@ from blynkapi import Blynk
 # vars
 auth_token = "sdjflksjflkdsjfkldsjfkldfkldjflk"
 
-# create object 
+# create objects
 room_light = Blynk(auth_token, pin = "V3")
+kitchen_light = Blynk(auth_token, pin = "V4")
+house_door = Blynk(auth_token, pin = "V5")
+
 # get current status
 res = room_light.get_val()
 print res
+
 # set pin value to 1
 room_light.on()
 # set pin value to 0
@@ -56,7 +60,7 @@ All methods return values from API or error if it fixed. For detailed descriptio
 
 Creating main object
 ```python
-Blynk(token, server, protocol = "http", port = "8080", pin = None, value = None)
+Blynk(token, server, protocol, port, pin, value)
 ```
   - `token` - Your project token
   - `server` - Blynk server for API requests, default "blynk-cloud.com"
@@ -79,7 +83,7 @@ To set your value for pin
 ```python
 set_val(value)
 ```
-  - `value` - Value in format ["x"] or multiple ["x", "y"]. [Details] (http://docs.blynkapi.apiary.io/#reference/0/pin-actions/write-pin-value)
+  - `value` - Custom value in list ["x"] or multiple values in list ["x", "y"]. [Details] (http://docs.blynkapi.apiary.io/#reference/0/pin-actions/write-pin-value)
 
 To get data from pin
 ```python

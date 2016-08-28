@@ -1,4 +1,4 @@
-#!/volume1/homes/admin/bots/flbot/venv/bin/python
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
 #
@@ -19,14 +19,14 @@ class Blynk(object):
 		value: A string value for API requests (default = None)
 	"""
 
-	def __init__(self, server, token, protocol = "http", port = "8080", pin = None, value = None):
+	def __init__(self, token, **kwargs):
 		"""Return a Customer object whose name is *name*.""" 
-		self.server = server
 		self.token = token
-		self.protocol = protocol
-		self.port = port
-		self.pin = pin
-		self.value = value
+		self.server = kwargs.get('server', 'blynk-cloud.com')
+		self.protocol = kwargs.get('protocol', 'http')
+		self.port = kwargs.get('port', '8080')
+		self.pin = kwargs.get('pin', None)
+		self.value = kwargs.get('value', None)
 		self.headers = {
 		  'Content-Type': 'application/json'
 		}
@@ -46,7 +46,7 @@ class Blynk(object):
 		request.get_method = lambda: 'PUT'
 		return self.__check(request)
 
-	def write_val(self, value):
+	def set_val(self, value):
 		request = Request(self.protocol+"://"+self.server+":"+self.port+"/"+self.token+"/pin/"+self.pin, data=str(value), headers=self.headers)
 		return self.__check(request)
 
@@ -76,7 +76,7 @@ class Blynk(object):
 		request = Request(self.protocol+"://"+self.server+":"+self.port+"/"+self.token+"/data/"+self.pin)
 		return self.__check(request)
 
-	def gr(self):
+	def qr(self):
 		request = Request(self.protocol+"://"+self.server+":"+self.port+"/"+self.token+"/qr")
 		return self.__check(request)
 

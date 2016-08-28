@@ -15,14 +15,14 @@ setup(
     name="blynkapi",
 
     # Version number (initial):
-    version="0.1.1",
+    version="0.1.2",
 
-    description="This is a simple blynk API wrapper.",
+    description="This is a simple blynk HTTP/HTTPS API wrapper.",
     long_description=long_description,
 
     #URL
-    url='https://github.com/xandr2/python-blynk-api',
-    download_url = 'https://github.com/xandr2/blynkapi/archive/0.1.1.tar.gz',
+    url='https://github.com/xandr2/blynkapi',
+    download_url = 'https://github.com/xandr2/blynkapi/archive/0.1.2.tar.gz',
 
     # Application author details:
     author="Alexandr Borysov",
@@ -31,7 +31,7 @@ setup(
     # License
     license='MIT',
 
-    keywords=['python', 'blynk', 'API', 'wrapper'],
+    keywords=['python', 'blynk', 'HTTP/HTTPS', 'API', 'wrapper'],
 
     # Packages
     packages=["blynkapi"],

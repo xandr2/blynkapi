@@ -1,6 +1,6 @@
 # blynkapi
 
-This is a simple blynk API wrapper.
+This is a simple blynk HTTP/HTTPS API wrapper.
 
 ### Introduction
 This library created for simple using [Blynk API](http://docs.blynkapi.apiary.io/#reference/0/pin-actions) and manage your project via python. It's simple one class lib which used `urllib2` for requests.

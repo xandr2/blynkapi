@@ -49,6 +49,7 @@ class Blynk(object):
 	def set_val(self, value):
 		#value = "[\""+value+"\"]"
 		request = Request(self.protocol+"://"+self.server+":"+self.port+"/"+self.token+"/update/"+self.pin, data=str(value), headers=self.headers)
+		request.get_method = lambda: 'PUT'
 		return self.__check(request)
 
 	def get_val(self):

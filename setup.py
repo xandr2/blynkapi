@@ -15,14 +15,14 @@ setup(
     name="blynkapi",
 
     # Version number (initial):
-    version="0.1.6",
+    version="0.1.7",
 
     description="This is a simple blynk HTTP/HTTPS API wrapper.",
     long_description=long_description,
 
     #URL
     url='https://github.com/xandr2/blynkapi',
-    download_url = 'https://github.com/xandr2/blynkapi/archive/0.1.6.tar.gz',
+    download_url = 'https://github.com/xandr2/blynkapi/archive/0.1.7.tar.gz',
 
     # Application author details:
     author="Alexandr Borysov",

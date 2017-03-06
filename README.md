@@ -83,7 +83,7 @@ To set your value for pin
 ```python
 set_val(value)
 ```
-  - `value` - Custom value in list ["x"] or multiple values in list ["x", "y"]. [Details] (http://docs.blynkapi.apiary.io/#reference/0/pin-actions/write-pin-value)
+  - `value` - Custom value in list ["x"] or multiple values in list ["x", "y"]. [Details] (http://docs.blynkapi.apiary.io/#reference/0/write-pin-value-via-put/write-pin-value-via-put)
 
 To get data from pin
 ```python

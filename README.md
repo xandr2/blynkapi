@@ -43,10 +43,14 @@ auth_token = "sdjflksjflkdsjfkldsjfkldfkldjflk"
 room_light = Blynk(auth_token, pin = "V3")
 kitchen_light = Blynk(auth_token, pin = "V4")
 house_door = Blynk(auth_token, pin = "V5")
+amp_power = Blynk(auth_token, pin = "V6")
 
 # get current status
 res = room_light.get_val()
 print res
+
+# set pin value (one)
+amp_power.set_val(["120"])
 
 # set pin value to 1
 room_light.on()

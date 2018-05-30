@@ -59,7 +59,7 @@ class Blynk(object):
 		return self.__check(request)
 
 	def get_val(self):
-		request = Request(self.protocol+"://"+self.server+":"+self.port+"/"+self.token+"/pin/"+self.pin)
+		request = Request(self.protocol+"://"+self.server+":"+self.port+"/"+self.token+"/get/"+self.pin)
 		return self.__check(request)
 
 	def push(self, value):
